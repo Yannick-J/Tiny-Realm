@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR Island Defense - Modular</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="loading">
+        <div class="spinner"></div>
+        <h1>VR Island Defense</h1>
+        <p>Loading game assets...</p>
+    </div>
+    
+    <div id="controls-info">
+        <h3>Controls</h3>
+        <ul>
+            <li><strong>Rotate Island:</strong> Hold both grips + twist hands</li>
+            <li><strong>Grab:</strong> Move hand near object + grip</li>
+            <li><strong>Throw:</strong> Arm motion + release grip</li>
+            <li><strong>Desktop:</strong> Click + drag to rotate view</li>
+        </ul>
+    </div>
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+    }
+    </script>
+    
+    <script type="module">
+        import { Game } from './js/Game.js';
+
+        const game = new Game();
+        game.init().catch(err => console.error("Fatal Error:", err));
+    </script>
+</body>
+</html>
