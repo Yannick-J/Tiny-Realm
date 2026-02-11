@@ -1,4 +1,20 @@
-# VR Island Defense
+# Tiny Realm
+
+Ein VR-Spiel für Meta Quest und Browser, in dem man eine kleine Insel aus der Gott-Perspektive gegen angreifende Slimes verteidigt. Entwickelt im Rahmen des Kurses Mensch-Computer-Interaktion 2 an der Hochschule Esslingen.
+
+## Screenshots
+
+<p align="center">
+  <img src="screenshots/screenshot1.png" width="500" alt="Gameplay">
+</p>
+
+## Technologien
+
+- Three.js
+- WebXR
+- JavaScript
+
+---
 
 ## Installation & Start
 
@@ -69,5 +85,3 @@ Verteidige das Dorf in der Mitte der Insel. Wenn zu viele Monster das Dorf errei
 ### Umgebung
 
 Die Insel schwebt in einem "Ständer" vor dir (God-View). Durch die Rotation (beide Grips) hast du immer den perfekten Überblick über das Schlachtfeld.
-
----
